@@ -18,6 +18,7 @@
   */
  function hook_jqmulti_files() {
    return array(
+    'sites/all/libraries/jquery-2.0.3.js',
     'path/to/file.js',
     'another/full/file/path.js',
    );
@@ -32,7 +33,7 @@
   */
  function hook_jqmulti_libraries() {
    return array(
-    'some_library',
+    'jquery-2.0.3.js',
     'another_library',
    );
  }
