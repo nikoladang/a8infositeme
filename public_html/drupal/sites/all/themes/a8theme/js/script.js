@@ -18,7 +18,25 @@ Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
     // Place your code here.
-
+        jQuery(document).ready(function($){
+            $("p").click(function(){
+                alert("zzzz");
+                // $(this).hide();
+            });
+            $("span").qtip({ // Grab some elements to apply the tooltip to
+                content: {
+                    text: 'My common piece of text here'
+                }
+            });
+            $("button").hover(function(){
+                alert("bbbbb");
+                $("span").qtip({ // Grab some elements to apply the tooltip to
+                    content: {
+                        text: 'My common piece of text here'
+                    }
+                });
+            });
+        });
   }
 };
 
